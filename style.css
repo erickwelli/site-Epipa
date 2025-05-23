@@ -1,0 +1,131 @@
+*{
+    margin: 0;
+    padding: 0;
+    line-height: 24px;
+}
+
+body{
+    width: 100%;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+i{
+    z-index: 5;
+}
+
+.container{
+    width: 1400px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+header{
+    width: 100%;
+    background-color: gray;
+    height: 100px;
+    margin-bottom: 100px;
+}
+
+header .container section{
+    display: flex;
+    gap: 200px;
+    justify-content: center;
+    align-items: center;
+}
+
+header .container section div{
+    width: 60px;
+    display: flex;
+    height: 20px;
+    background-color: blue;
+}
+
+header .container section div:nth-child(2){
+    background-color: black;
+    position: relative;
+    top: 20px;
+    font-weight: 900;
+    color: white;
+    display: flex;
+    align-content: center;
+    justify-content: center;
+    font-size: 10px;
+}
+
+header .container .fixado{
+    width: 100px;
+    height: 100px;
+    position: fixed;
+    background-color: red;
+    right: 50px;
+}
+
+main{
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+}
+
+main .container{
+    flex-direction: column;
+    gap: 50px;
+    background-color: aqua;
+    padding: 50px;
+}
+
+main .container .static{
+    width: 200px;
+    height: 200px;
+    background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSVy4uK91ZNmbdH9uQvdBvP6AfdDLATAij3Aw&s);
+}
+
+main .container .text{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+main .container .sticky{
+    width: 100px;
+    height: 100px;
+    background-color: red;
+    position: sticky;
+    top: 10px;
+    color: white;
+    font-weight: 900;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+footer{
+    width: 100%;
+    margin-top: 100px;
+    background-color: brown;
+    height: 300px;
+}
+
+footer .container{
+    gap: 20px;
+    padding-top: 50px;
+    position: relative;
+}
+
+footer .container div{
+    width: 100px;
+    height: 100px;
+    background-color: green;
+    display: flex;
+}
+
+footer .container div:nth-child(2){
+    background-color: black;
+    position: absolute;
+    top: 20px;
+    color: white;
+    justify-content: center;
+    align-items: center;
+}
+
